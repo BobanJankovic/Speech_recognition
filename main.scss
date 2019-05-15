@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+$dark: #282c34;
+$blue: #3ba9f4;
+$green: #9fea63;
+
+* { box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $dark;
+  font-family: 'Kanit', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 50px;
+}
+
+#mic {
+  display: inline-block;
+  margin: 50px 0;
+  font-size: 80px;
+  line-height: 170px;
+  height: 180px;
+  width: 180px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all .2s linear;
+  cursor: pointer;
+  
+  &.fa-microphone {
+    border: 5px solid $blue;
+    color: $blue;
+    &:hover {  
+      color: $green;
+      border-color: $green;
+    }
+  }
+  
+  &.fa-microphone-slash {
+    border: 5px solid #ff0000;
+    color: #ff0000;
+    &:hover {  
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+}
+
+#text {
+  display: block;
+  height: 50px;
+  width: 500px;
+  font-size: 25px;
+  padding: 15px;
+  border: 2px solid $blue;
+  background-color: transparent;
+  color: $green;
+  border-radius: 25px;
+}
